@@ -41,14 +41,14 @@
 1. exts.py
    - 存放内容为MoonShotKimi API密钥 ，LangSmith 跟踪调试工具API
    - 若需要使用LangSmith 需前往Langsmith官网注册并创建项目
-   - ![图片说明](rsc\langsmith.png)  
+   - ![图片说明](rsc/langsmith.png)  
    - 复制tracing跟踪调试相关环境变量，并替换exts内相关
 2. FakeNews.py
    - 程序主程序
    - class State（TypedDict）为一个字典类型的类，代表整个Chain路径下的状态。内部定义一个成员变量（key）为messages，并annotated[list, add_messages]每次迭代更新时都会加入新的记录（即字典的value为列表类型，每次都会在其中加入新的元素）.
    - should_continue / call_model 两串业务逻辑代码,作用为被图中相应节点所调用，当逻辑运行至相关节点时，会调用此函数，函数的参数为当前Chain下的状态（一般为所有的对话记录）
    - 生成langgraph图（添加节点与边）
-   - ![图片说明](rsc\graph.png)  
+   - ![图片说明](rsc/graph.png)  
 3. llm
    - 程序使用的llm模型对象(需要import llm_tools 中的工具，将tools与llm绑定)
 4. llm_tools
