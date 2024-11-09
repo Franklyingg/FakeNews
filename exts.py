@@ -3,7 +3,7 @@ import os
 
 
 '''
-付费API,勿滥用,将于2025/2/1日取消授权
+付费API,将于2025/2/1日取消授权
 '''
 
 os.environ["LANGCHAIN_TRACING_V2"] = 'true'

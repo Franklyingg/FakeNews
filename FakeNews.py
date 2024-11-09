@@ -11,7 +11,7 @@ class State(TypedDict):
 
 
 '''
-项目复现采用付费API,勿滥用,将于2025/2/1日取消API授权
+付费API,将于2025/2/1日取消API授权
 '''
 
 
